@@ -9,7 +9,7 @@ version: 1.5.8
 New-PSUScript -Name 'Reset Password' -ScriptBlock {
     param(
         [String]$Identity,
-        [String]$Password,
+        [SecureString]$Password,
         [Switch]$Unlock,
         [Switch]$ChangePasswordOnLogon
     )
